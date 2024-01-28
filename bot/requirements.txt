@@ -1,5 +1,0 @@
-flask
-nltk
-numpy
-torch
-regex

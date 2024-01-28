@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="../static/css/app.css">
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button >
+                <a href="{{ url_for('index') }}"><i class="fa fa-arrow-left"></i></a>
+            </button>
+            <div class="botI">
+                <img src="../static/img/prop.jpg" width="100%" style="border-radius: 100px; background-size: cover; " height="100%" alt="">
+            </div>
+            <p style="position: relative; top: -10%;">
+                ZYLLA
+            </p>
+            <div class="moreOp">
+                <i class="fa fa-ellipsis-v"></i>
+            </div>
+        </div>
+        
+        <div class="messages" id="chatWindow">
+        <center>
+            <div class="bmess" style="margin-bottom: 10px; padding:15px 10px; align-self: center;">
+            Hello and welcome, I'm here to assist you in educational<br>
+            and institute related questions. 
+            </div>
+        </center>
+            
+            
+        </div>
+
+        <form action="" method="post" id="message-form">
+            <input type="text" name="message" placeholder="Write a message..." id="userInput">
+            <button class="send" type="submit" > <i class="fa fa-paper-plane"></i> send</button>
+        </form>
+       
+    </div>
+
+        <script >
+
+                function addZero(i) {
+                    if (i < 10) {
+                      i = "0" + i;
+                    }
+                    return i;
+                  }
+                function currentTime() {
+                  var d = new Date();
+                  var h = addZero(d.getHours());
+                  var m = addZero(d.getMinutes());
+                  var s = addZero(d.getSeconds());
+                   return `${h} : ${m}: ${s}`;
+            }
+
+
+            document.getElementById('message-form').addEventListener('submit', (event) => {
+                event.preventDefault();
+                let message = document.getElementById('userInput').value;
+                console.log(message);
+
+                //asynchronus request sent to backend...
+                fetch('/send_message', {method: 'POST', 
+                headers:{'Content-Type':'application/x-www-form-urlencoded'}, 
+
+                body: 'message=' + encodeURIComponent(message)
+                }).then(response => response.json()).then(data =>{
+
+                    var chatwin = document.getElementById('chatWindow');
+                    var userQ = document.createElement('li');
+                    var mbox = document.createElement('div');
+                    mbox.textContent = message;
+                    var img1 = document.createElement('img');
+                    var nTime = document.createElement('div');
+                    nTime.innerText = currentTime();
+                    nTime.classList.add('sT');
+                    mbox.appendChild(nTime); 
+                    img1.classList.add('im1');
+                    img1.src = "../static/img/user.jpg";
+                    mbox.appendChild(img1);
+                    mbox.classList.add('umess');
+                    userQ.appendChild(mbox);
+                    chatwin.appendChild(userQ);
+
+                    var resposeM = document.createElement('li');
+                    var bBox = document.createElement('div');
+                    var img = document.createElement('img');
+                    img.classList.add('im');
+                    
+                    img.src = "../static/img/prop.jpg";
+                    bBox.classList.add('bmess')
+                    bBox.innerHTML = data.answer;
+                    var Time = document.createElement('div');
+                    Time.innerText = currentTime();
+                    Time.classList.add('mT');
+                    bBox.appendChild(Time);
+                    bBox.appendChild(img);
+                    resposeM.appendChild(bBox);
+                    //<!-- console.log(data.response) -->
+                    chatwin.appendChild(resposeM);
+                    chatwin.scrollTop = chatwin.scrollHeight;
+                    console.log(chatwin.scrollTop)
+                    console.log(data, 12344);
+                    document.getElementById('userInput').value = '';
+            
+                });
+            
+            });
+            
+        </script>
+</body>
+</html>

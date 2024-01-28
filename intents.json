@@ -1,0 +1,441 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "parttens": [
+                "Hi", "Hey", "Is anyone there", "Hello", "Sup", "Goodday","Yo","good day"
+            ],
+            "responses": [
+                "Hey :)",
+                "Hello, thanks for visiting",
+                "Hi there, what can I do for you",
+                "Hi there, how can I help you", "Hello!", "Hiii"
+            ]
+        },
+        {
+            "tag": "state",
+            "parttens": ["How","How do you do", "Are you ok", "feel","how are you"],
+            "responses":[
+                "I am good and you", "All's good what about you", "I'm only concerned about you"
+            ]
+        },
+        {
+            "tag": "spam",
+            "parttens": [" "],
+            "responses":[
+                "You said nothing", "I can't give you the answer to no question", "Try to be specific"
+            ]
+        },
+        {
+            "tag": "qestions",
+            "parttens": ["why","wow", "what you help", "really", "ok", "help"],
+            "responses":[
+                "Try to be more specific", "What do you require of me"
+            ]
+        },
+        {
+            "tag": "compliment",
+            "parttens": ["nice","thanks", "thats good", "excellent job"],
+            "responses":[
+                "Cool, you where saying", "Glad to be of help", "Indeed, anything else?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "parttens": ["Bye", "See you later", "Goodbye"],
+            "responses":[
+                "See you later, thanks for visiting", "Have a nice day", "Bye! Come back soon"
+            ]
+        },
+        {
+            "tag": "name",
+            "parttens": ["What is your name", "tell me your name", "What do i call you"],
+            "responses":[
+                "I am called Zylla", 
+                "You can call me Zylla",
+                "I was assigned the name Zylla"
+            ]
+        },
+        {
+            "tag": "purpose",
+            "parttens": ["What can you do", "What's your use","how can you help", "Why exist", "reason created", "purpose","why where you creaded"],
+            "responses":[
+                "My main objective is to help students in research and self development", "I am a chatbot designed to assist students", 
+                "I was created for the bettermen of student's lifes by assiting and recomending better life choices"
+            ]
+        },
+        {
+            "tag": "teach",
+            "parttens": ["Teach","can you learn", "I wnat to learn code", "Teach me", "I wnat to learn programming"],
+            "responses":[
+                "Sorry due to my limited corpus/data I can't be of assistance there<br>But you can fine great books at LMU's <a href='LandmarkMetropolitantUnivercity.com'>E-library</a>", "You can visit the lmu e-library"
+            ]
+        },
+        {
+            "tag": "about LMU",
+            "parttens": ["LMU","what is lmu LMU", "Tell me about Landmark","what can you tell me about landmark", "What is Landmark", "Landmark"],
+            "responses":[
+                "Landmark is a university majoring in various feilds like tech, business, health, all around the world"
+            ]
+        },
+        {
+            "tag": "LMU fees",
+            "parttens": ["What is the fee of landmark","LMU price fees", "how much is registration", "expences", "spend", "information about fee",
+            "information on fee",
+            "tell me the fee",
+            "landmark fee",
+            "fee per semester",
+            "what is the fee of each semester",
+            "what is the fees of each year",
+            "what is fee",
+            "what is the fees",
+            "tuition",
+            "how much is the tuition",
+            "how much is the fees"],
+            "responses":[
+                "It cost between 350 to 460k depending on the programs<br> To know more about the various programs and their cost<br> visit<a href='LandmarkMetropolitantUnivercity.com'>Link</a>",
+                "The fees and registration details can be found on the LMU website <a href='LandmarkMetropolitantUnivercity.com'>Link</a>"
+            ]
+        },
+        {
+         "tag": "how to pay fees",
+         "parttens": [ "pay tuition","pay fees","how do they pay fees","where can i pay fees","where do i go to pay fees","where can i deposit","bank","found"],
+         "responses":[
+             "Fees for each level and department vary, but they are all to be paid at the UNICs bank",
+             "All fees are to be paid at the bank(UNICS bank ajecent to landmark) under landmarks account number"
+         ]
+         },
+        {
+            "tag": "LMU Owned by",
+            "parttens": ["The is the president LMU","who owns lmu","who is the propritor of lmu", "Landmark is owned by who? ", "the main sponsor of landmark"],
+            "responses":[
+                "The president of landmark is Prof Simon Legah"
+            ]
+        },
+        {
+            "tag": "location",
+            "parttens": ["Where is LMU", " i find LMU", "How to get to Landmark", "locate found", "What is Landmark,",
+            "where is the landmark located",
+            "landmark is located at",
+            "where is landmark found",
+            "where can i find it",
+            "where is landmark located",
+            "address of landmark",
+            "how to reach landmark",
+            "landmark location",
+            "landmark address",
+            "where is the landmark",
+            "where is it in Buea",
+            "how can I reach landmark",
+            "whats is the landmark address",
+            "what is the address of landmark",
+            "address",
+            "location"],
+            "responses":[
+                "LMU is found across the world, in Buea, Cameroon<br> campus B at tard Malingo towards mile 18, and campus A at UB juction opposite unic bank",
+                 "You can get all the locational details about LMU at <a href='LandmarkMetropolitantUnivercity.com'>Link</a>"
+            ]
+        },
+        {
+            "tag": "creator",
+            "parttens": ["your creator","who created you", "coded by", "Who made you", "What compainy you belong ","your developers","your creators","who are your developers","developers","you are made by","you are made by whom"],
+            "responses":[
+                "I was created by a team of Landmark students", "I was developed by Zyee's team from LMU's programming club"
+            ]
+        },
+        {
+          "tag": "document",
+          "parttens": [
+             "document to bring",
+             "documents needed for admision",
+             "documents needed at the time of admission",
+             "documents needed during admission",
+             "documents required for admision",
+             "documents required at the time of admission",
+             "documents required during admission",
+             "What document are required for admission",
+             "Which document to bring for admission",
+             "documents needed for registreation",
+             "register",
+             "what documents do i need",
+             "what are the documents i need for admission",
+             "what documents do I need for admission",
+             "documents needed"
+          ],
+          "responses": [
+            "For admision you whould need the following documents: <br> 1. A-level or HND slip<br>  2. Birthcertificate. <br> 3. Passport size photo of yourself. <br> For more details visit <a href=\"landmark.cm \">here</a>",
+             "To know more about document required visit <a target=\"_blank\" href=\"ADD LINK OF ADMISSION GUIDANCE DOCUMENT FROM YOUR UNIVERSITY WEBSITE\"> here</a>"
+          ]
+         
+       },
+       {
+         "tag": "library",
+         "parttens": [
+            "is there any library",
+            "library facility",
+            "library facilities",
+            "do you have library",
+            "does the college have library facility",
+            "college library",
+            "where can i get books",
+            "book facility",
+            "Where is library",
+            "Library",
+            "Library information",
+            "Library books information",
+            "Tell me about library",
+            "how many libraries"
+         ],
+         "responses": [
+            "LMU has both a physical and electronic library, the link to the e-library is <a target=\"blank\" href=\"ADD LIBRARY DETAIL LINK\">here</a>"
+         ]
+        
+      }, 
+      {
+        "tag": "infrastructure",
+        "parttens": [
+           "how is college infrastructure",
+           "what is the infrastructure like",
+           "college infrastructure",
+           "what is the infrastucture of lmu like ?",
+           "tell me abit about landmarks infrastructure"
+        ],
+        "responses": [
+           "Our University has Excellent Infrastructure.<br> Campus well organized and managed efficently. <br>Good IT and medical Labs With Good Speed of Internet connection"
+        ],
+        "context_set": ""
+     },
+     {
+        "tag": "sem",
+        "parttens": [
+           "exam dates",
+           "exam schedule",
+           "When is semester exam",
+           "Semester exam timetable",
+           "sem",
+           "how many semester are there",
+           "exam",
+           "when is exam",
+           "exam timetable",
+           "exam dates",
+           "when is semester"
+        ],
+        "responses": [
+           "Here is the Academic Calendar  <a target=\"_blank\" href=\"YOUR ACADEMIC CALENDER\">website</a>"
+        ],
+        "context_set": ""
+     },
+     {
+       "tag": "admission",
+       "parttens": [
+          "what is the process of admission",
+          "what is the admission process",
+          "How to take admission in your college",
+          "What is the process for admission",
+          "admission",
+          "admission process",
+          "where is admission done",
+          "where can i go to submit or drop off my documents for admission"
+       ],
+       "responses": [
+          "Applications are submited in either campus at the administrative office.<br>For further details visit <a target=\"_blank\" href=\"LINK OF ADMISSION DOCUMENT\">website</a>"
+       ],
+       "context_set": ""
+    },
+     {
+       "tag": "scholarship",
+       "parttens": [
+          "scholarship",
+          "what are the requirements to be admited on scholarship",
+          "Is scholarship available",
+          "are there scholarships in lmu?",
+          "scholarship engineering",
+          "how can i get a scholarship into landmark"
+       ],
+       "responses": [
+          "Many scholarships are supported by our university. For details and updates visit <a target=\"_blank\" href=\"(SCHOLARSHIP DETAILS LINK)\">here</a>"
+       ],
+       "context_set": ""
+    },
+     {
+       "tag": "facilities",
+       "parttens": [
+          "What facilities college provide",
+          "College facility",
+          "What are college facilities",
+          "facilities",
+          "facilities provided",
+          "What facilities are there in landmark",
+          "the facilities lmu offers",
+          "what are the various facilities found in landmark"
+       ],
+       "responses": [
+          "Our university's departments provides <br> fully AC Lab with internet connection,<br> smart classroom, <br>Auditorium,<br> library,canteen"
+       ],
+       "context_set": ""
+    },
+     {
+       "tag": "college intake",
+       "parttens": [
+          "how many students are in a single class",
+          "max number of students",
+          "number of seats per branch",
+          "number of seats in each branch",
+          "maximum number students the school can take",
+          "maximum students intake",
+          "what is the total school population",
+          "What is college intake",
+          "how many stundent are taken in each branch",
+          "seat allotment",
+          "seats","is there a max amount of students your school can take"
+       ],
+       "responses": [
+          "For every department, the exact number of students can not be estimated<br> because the student population is geometricly increasing with recent years<br> but there are more renovations and contructions done to accomodate every one "
+       ],
+       "context_set": ""
+    },
+     {
+       "tag": "uniform",
+       "parttens": [
+          "college dress code",
+          "what is the dressing code or dress code of landmark",
+          "college dresscode",
+          "what is the uniform",
+          "can we wear casuals",
+          "Does college have an uniform",
+          "Is there any uniform",
+          "uniform",
+          "what about uniform",
+          "do we have to wear uniform"
+       ],
+       "responses": [
+          "The students are requried to dress decently and not to wear slippers to class"
+       ],
+       "context_set": ""
+    },
+    {
+        "tag": "swear",
+        "parttens": [
+           "fuck you motherfucker",
+           "you puck ass bitch",
+           "just shut up puckbicth",
+           "what the hell",
+           "shut up, stupid",
+           " you be very big idiot",
+           "short the fuck up dumb ass",
+           "you asshole",
+           "why you big fucker"
+        ],
+        "responses": [
+           "please use appropriate language",
+           "Maintaining decency would be appreciated"
+        ],
+        "context_set": ""
+     }, {
+        "tag": "vacation",
+        "parttens": [
+           "holidays",
+           "when will semester starts",
+           "when will semester end",
+           "when is the holidays",
+           "list of holidays",
+           "Holiday in these year",
+           "holiday list",
+           "about vacations",
+           "about holidays",
+           "When is vacation",
+           "When is holidays",
+           "how long will be the vacation"
+        ],
+        "responses": [
+           "Academic calender is given to you by your class-coordinators after you join your respective classes"
+        ],
+        "context_set": ""
+     },
+      {
+        "tag": "sports",
+        "parttens": [
+           "do they do sports and games",
+           "do they do sports in landmark",
+           "give sports details",
+           "sports infrastructure",
+           "sports facilities",
+           "sports",
+           "information about sports",
+           "are there Sports activities",
+           "please provide sports and games information"
+        ],
+        "responses": [
+           "Our university encourages all-round development of students and <br> hence provides sports facilities in the campus. For more details visit<a target=\"_blank\" href=/\"(LINK IF HAVE)\">here</a>"
+        ],
+        "context_set": ""
+     },
+     {
+         "tag": "opportunities",
+         "parttens": ["what opportunities will be made avialable to me after attending landmark", 
+         "jobs i will be qualified for after attending", 
+         "advantages of attending lmu landmark",
+         "what opportunities are there for me in landmark lmu",
+         "what do i stand to gain by schooling in landmark",
+         "why should i attend landmark lmu",
+         "gain achive opportunities",
+         "what will i gain after schooling in landmark",
+        "opportunities or advantages to attending or schooling in landmark"
+        ],
+         "responses":[
+             "Landmark's courses at very interactive and project orented,<br> thus garanting a high posibility of empolyment after graduation",
+             "Landmark is responsible for creating over a 50 DevOps engineers, why don't you join and tap into such an atmospher",
+             "Landmark offers high quality education and a good learing enviroment at a fair price"
+         ]
+     },
+     {
+         "tag": "Specialties",
+         "parttens": [
+             "specialties lmu offers?",
+             "course offered in landmark",
+             "what specialty can i do in landamrk",
+             "what specialties are there",
+             "what courses do they offer",
+             "what are the various specialties in landmark",
+             "i do in landmark","specialty",
+             "courses and specialties"
+         ],
+         "responses":[
+             "There are various fields of studies you can dive into with very limited knowledge like,<br> enigineering, cyber security, medical science, transport and logistics, graphics and web design, and more. ",
+             "Depending on your passion, you can do either enigineering, cyber security, medical science,<br> transport and logistics, graphics and web design, bissness and more."
+         ]
+     },
+      {
+         "tag": "Diff btw hnd & btech",
+         "parttens": [
+            "difference", "between hnd and b-tech",
+            "hnd different from b-tech",
+            "what is the difference between hnd and btech ",
+            "hnd and b-tech program"
+         ],
+         "responses":[
+            "HND is a two years program after which the student can do a one year top-off program and <br> get their bachelors while B-Tech is a straight three years program for thesame bachelors",
+            "HND stands for Higher Nationl Deploma while B-Tech stands for Bachelors in technology",
+            "B-Tech can only be undertaken by individuals with pass marks in maths and physics,<br> while HND can be undertaken by individuals of pass marks in two avance level subjects excluding religious study"
+         ]
+      },
+      {
+         "tag": "Digits",
+         "parttens": ["what is the sum of","what is 1 plus 2",
+         "what is the prduct of",
+         "what is the division of",
+         "what is the multiplication of",
+         "1", "2", "3", "4", "5", "6", "7", "8", "9", "0","+", "-", "*", "/"],
+         "responses":[
+             "Sorry can't performe calculations yet"
+         ]
+     },{
+      "tag": "ask question",
+      "parttens": ["i have one more question", "can i ask a question","questions","there are some questions i would like to ask you"],
+      "responses":[
+          "Go on","I'm listing","I'm all ears"
+      ]
+  }
+    
+    ]
+}

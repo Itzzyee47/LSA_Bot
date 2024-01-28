@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUP</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h2>
+                LSA_Chatbot
+            </h2>
+            
+            <div class="content">
+            <input type="email" placeholder="Enter your email" required>
+            
+            <input type="password" placeholder="**********" required>
+            
+            <input type="submit" value="Login">
+            </div>
+        </form>
+        <div class="display">
+            "Hi there!!" <br> 
+            <p><a href="{{ url_for('chat') }}">Chat with Zylla</a></p>
+           
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+
+</html>

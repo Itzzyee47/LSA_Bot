@@ -1,4 +1,4 @@
-import random, json, torch, pyttsx3, regex
+import random, json, torch, regex
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 from arthOps import perform_opertion
@@ -10,13 +10,6 @@ with open('intents.json', 'r') as f:
     
 FILE = "data2.pth"
 data = torch.load(FILE)
-engine = pyttsx3.init('sapi5')
-voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id)
-engine.setProperty('rate', 166)
-
-def say(text):
-    engine.say(text)
 
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]

@@ -4,8 +4,9 @@ body{
     margin: 0;
 }
 .header{
+    font-family: monospace;
     width: 100%;
-    height: 10%;
+    height: 7%;
     background-color: rgb(192, 137, 236);
     display: flex;
     gap: 9px    ;
@@ -18,32 +19,41 @@ body{
     background-color: transparent;
     border: none;
     color: #fff;
-    font-size: 1.5rem;
-    font-family: cursive;
+    font-size: 1.1rem;
 }
 .header>button:hover{
     text-shadow: 2px 3px 2px black;
-    color: rgb(255, 0, 0);
     cursor: pointer;
-    font-family: cursive;
+}
+.h{
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: fantasy;
+    -webkit-text-stroke: 1px #00000085;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ef00ff, rgb(167 153 251), rgb(2 144 201));
+}
+small{
+    font-size: 0.4rem;
 }
 .moreOp{
-    width: 20px;
+    width: 10px;
     font-size: 1.5rem;
     font-family: cursive;
     /* text-shadow: 1px 2px 4px black; */
     position: absolute;
-    right: 20px;
+    right: 5px;
     text-align: center;
 }
 .botI{
-    width: 50px;
-    height: 50px;
+    width: 38px;
+    height: 38px;
     border-radius: 100px;
 }
 .messages{
     width: auto;
-    height: 75vh;
+    height: 84vh;
     background-color: rgba(247, 247, 247, 0.089);
     display: grid;
     grid-template-columns: 1fr;
@@ -65,8 +75,7 @@ li{
     position: relative;
     border-radius: 10px;
     border: none;
-    font-family: cursive;
-    font-style: italic;
+    font-family: math;
     margin: 5px 0;
 }
 .bmess{
@@ -132,19 +141,25 @@ li>p{
     color: rgb(107, 89, 30);
 }
 form{
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
-    bottom: 20px;
-    width: 98%;
+    bottom: 10px;
+    width: 99%;
+    background-color: white;
     height: 40px;
     display: flex;
-    gap: 6px;
-    padding: 0 0px 0 3px;
+    flex-direction: row;
+    gap: 3px;
 }
 .container{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    scale: 0;
     width: 100%;
     height: 100vh;
     background-color: rgb(216, 246, 248);
-    
 }
 input{
     position: relative;
@@ -156,23 +171,63 @@ input{
     font-size: 1.5rem;
     font-family: cursive;
 }
-input:focus,input:active{
-    border-color: #fff;
+input:focus-visible,.send:focus-visible,.chat:focus-visible{
+    outline: none;
 }
 .send{
-    position: absolute;
-    top: 4px;
-    right: 8px;
     width: 13%;
-    height: 80%;
+    height: 100%;
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: rgb(86, 226, 86);
     font-size: 1rem;
-    font-weight: bolder;
 }
 
-@media only screen and (max-width: 600px) {
+.show{
+    animation: pop 0.2s linear 0s forwards;
+    transition: width 2s, height 4s ;
+}
+@keyframes pop {
+    from {scale: 0;}
+    to {scale: 1;}
+  }
+@keyframes shrink {
+    from {scale: 1;}
+    to {scale: 0;}
+  }
+.chat{
+    z-index: -1;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(45deg, #ef00ffc9, rgb(167 153 251 / 92%), rgb(50 255 223));
+}
+.chat:hover{
+    box-shadow: 2px 3px 10px rgb(90, 90, 90);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .botI{
+        width: 33px;
+        height: 33px;
+    }
+    .header>p{
+        top: -20px;
+        font-size: 0.9rem;
+    }
+    #bmess1{
+        width: 90%;
+    }
     .bmess,.umess {
       right: 0;
     }
@@ -188,12 +243,13 @@ input:focus,input:active{
     form{
         padding: 0;
     }
-    .input{
-        font-size: 0.9rem;
+    input{
+        font-size: 0.7rem;
     }
     .send{
         right: 9px;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
+        height: 80%;
     }
 
   }

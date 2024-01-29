@@ -48,7 +48,7 @@ def getRespons(sentence):
                 print(tag)
                 return ran
                 
-    elif prob.item() >= 0.56 or prob.item() <= 0.7:
+    elif prob.item() > 0.56 or prob.item() <= 0.7:
         for intent in intents["intents"]:
             if tag == intent["tag"]:
                 if tag == "Digits":

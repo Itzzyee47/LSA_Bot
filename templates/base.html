@@ -9,16 +9,28 @@
     <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container">
+    <center >
+        <div id="bmess1" class="bmess" style="margin-bottom: 10px; padding:15px 10px; align-self: center; box-shadow:10px 8px 20px 0px #939191;">
+            <div class="h">
+                LANDMARK's STUDENT ASSISTANT(LSA)  <br>CHATBOT
+            </div>
+            <div class="botI" style="width:80px; height:80px;">
+                <img src="../static/img/prop.jpg" width="100%" style="border-radius: 90px; background-size: cover; " height="100%" alt="">
+            </div>
+            Hello and welcome, I'm here to assist you in educational<br>
+            and institute related questions. 
+        </div>
+    </center>
+    <div class="container" id="cont">
         <div class="header">
             <button >
-                <a href="{{ url_for('index') }}"><i class="fa fa-arrow-left"></i></a>
+                <a onclick="hideCon()"><i class="fa fa-arrow-left"></i></a>
             </button>
             <div class="botI">
                 <img src="../static/img/prop.jpg" width="100%" style="border-radius: 100px; background-size: cover; " height="100%" alt="">
             </div>
             <p style="position: relative; top: -10%;">
-                ZYLLA
+                ZYLLA<small>1.0.1</small>
             </p>
             <div class="moreOp">
                 <i class="fa fa-ellipsis-v"></i>
@@ -26,12 +38,7 @@
         </div>
         
         <div class="messages" id="chatWindow">
-        <center>
-            <div class="bmess" style="margin-bottom: 10px; padding:15px 10px; align-self: center;">
-            Hello and welcome, I'm here to assist you in educational<br>
-            and institute related questions. 
-            </div>
-        </center>
+        
             
             
         </div>
@@ -42,8 +49,29 @@
         </form>
        
     </div>
-
+        <div class="chat" onclick="showCon()">
+            <i class="fa fa-comment" style="color: #fff; font-size:1.5rem;"></i><div> chat</div>
+        </div>
         <script >
+
+                function showCon(){
+                    console.log("clicked add")
+                    let C = document.getElementById('cont');
+                    
+                    if (C.style.scale == 0){
+                        C.classList.toggle('show');
+                        
+                    }
+                }
+                function hideCon(){
+                    console.log("clicked del")
+                    let C = document.getElementById('cont');
+                    
+                    if (C.style.scale == 0){
+                        //C.style.display = 'none'
+                        C.classList.toggle('show');
+                    }
+                }
 
                 function addZero(i) {
                     if (i < 10) {
@@ -65,6 +93,9 @@
                 let message = document.getElementById('userInput').value;
                 console.log(message);
 
+                //clear form input to show that message has been sent.....
+                document.getElementById('userInput').value = '';
+
                 //asynchronus request sent to backend...
                 fetch('/send_message', {method: 'POST', 
                 headers:{'Content-Type':'application/x-www-form-urlencoded'}, 
@@ -82,7 +113,7 @@
                     nTime.classList.add('sT');
                     mbox.appendChild(nTime); 
                     img1.classList.add('im1');
-                    img1.src = "../static/img/user.jpg";
+                    img1.src = "../static/img/profile.png";
                     mbox.appendChild(img1);
                     mbox.classList.add('umess');
                     userQ.appendChild(mbox);
@@ -107,7 +138,7 @@
                     chatwin.scrollTop = chatwin.scrollHeight;
                     console.log(chatwin.scrollTop)
                     console.log(data, 12344);
-                    document.getElementById('userInput').value = '';
+                    
             
                 });
             

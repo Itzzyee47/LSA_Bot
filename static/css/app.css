@@ -102,7 +102,7 @@ li{
     border-radius: 10px;
     height: fit-content;
     text-align: right;
-    padding: 4px;
+    padding: 9px;
     position: relative;
 }
 li>p{
@@ -169,7 +169,6 @@ input{
     border-color: #fff;
     padding: 1px 0px 0 6%;
     font-size: 1.5rem;
-    font-family: cursive;
 }
 input:focus-visible,.send:focus-visible,.chat:focus-visible{
     outline: none;
@@ -243,7 +242,7 @@ input:focus-visible,.send:focus-visible,.chat:focus-visible{
         padding: 0;
     }
     input{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     .send{
         right: 9px;

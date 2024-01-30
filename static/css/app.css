@@ -185,7 +185,6 @@ input:focus-visible,.send:focus-visible,.chat:focus-visible{
 
 .show{
     animation: pop 0.2s linear 0s forwards;
-    transition: width 2s, height 4s ;
 }
 @keyframes pop {
     from {scale: 0;}

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <center >
+    <center id="Cent">
         <div id="bmess1" class="bmess" style="margin-bottom: 10px; padding:15px 10px; align-self: center; box-shadow:10px 8px 20px 0px #939191;">
             <div class="h">
                 LANDMARK's STUDENT ASSISTANT(LSA)  <br>CHATBOT
@@ -55,13 +55,15 @@
         </div>
         <script >
 
+            let cent = document.getElementById('Cent');
                 function showCon(){
                     console.log("clicked add")
                     let C = document.getElementById('cont');
                     
                     if (C.style.scale == 0){
                         C.classList.toggle('show');
-                        
+                        C.style.position = "";
+                        cent.style.display = "none";
                     }
                 }
                 function hideCon(){
@@ -71,6 +73,8 @@
                     if (C.style.scale == 0){
                         //C.style.display = 'none'
                         C.classList.toggle('show');
+                        C.style.position = "";
+                        cent.style.display = "block";
                     }
                 }
 
@@ -85,7 +89,7 @@
                   var h = addZero(d.getHours());
                   var m = addZero(d.getMinutes());
                   var s = addZero(d.getSeconds());
-                   return `${h} : ${m}: ${s}`;
+                   return `${h} : ${m}`;
             }
 
 

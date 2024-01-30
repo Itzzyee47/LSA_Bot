@@ -59,3 +59,27 @@ input{
     border-radius: 20px;
     border: none;
 }
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    form> h2 {
+        font-size: 1.5rem;
+        margin-top: 10%;
+    }
+    .display {
+        width: 100%;
+    }
+    form {
+        width: 100%;
+        padding:0 ;
+    }
+    .content{
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        width: 80%;
+    }
+}

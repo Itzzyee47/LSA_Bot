@@ -145,7 +145,7 @@ form{
     align-items: center;
     position: fixed;
     bottom: 10px;
-    width: 99%;
+    width: 100%;
     background-color: white;
     height: 40px;
     display: flex;
@@ -176,6 +176,7 @@ input:focus-visible,.send:focus-visible,.chat:focus-visible{
 .send{
     width: 13%;
     height: 100%;
+    margin-right: 6px;
     border: none;
     border-radius: 20px;
     background-color: rgb(86, 226, 86);
@@ -223,9 +224,15 @@ input:focus-visible,.send:focus-visible,.chat:focus-visible{
         top: -20px;
         font-size: 0.9rem;
     }
+    .header{
+        height: 10%;
+    }
     #bmess1{
         width: 90%;
     }
+    .umess {
+        max-width: 85%;
+      }
     .bmess,.umess {
       right: 0;
     }

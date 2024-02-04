@@ -54,8 +54,8 @@ class ChatDataset(Dataset):
         return self.n_samples
 
 # Hyperparameters
-batch_size = 7
-hidden_size = 8
+batch_size = 5
+hidden_size = 7
 output_size = len(tags)
 input_size = len(X_train[0])
 print(input_size, len(all_words))
@@ -75,6 +75,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 # main bug in my code now....
+#And not anymore...
 for epoch in range(num_epochs):
     for (words, labels) in train_loader:
         words = words.to(device)

@@ -3,7 +3,7 @@
         {
             "tag": "greeting",
             "parttens": [
-                "Hi", "Hey", "Is anyone there", "Hello", "Sup", "Goodday","Yo","good day"
+                "Hi", "Hey", "Is anyone there", "Hello", "Sup", "Goodday","Yo","good day","yooo"
             ],
             "responses": [
                 "Hey :)",
@@ -28,14 +28,14 @@
         },
         {
             "tag": "qestions",
-            "parttens": ["why","wow", "what you help", "really", "ok", "help"],
+            "parttens": ["why","wow", "what you help", "really", "help"],
             "responses":[
                 "Try to be more specific", "What do you require of me"
             ]
         },
         {
             "tag": "compliment",
-            "parttens": ["nice","thanks", "thats good", "excellent job"],
+            "parttens": ["nice","thanks","good","thats good","good and you","i am ok and you","cool","thanks for asking","ok", "excellent job"],
             "responses":[
                 "Cool, you where saying", "Glad to be of help", "Indeed, anything else?"
             ]
@@ -49,7 +49,7 @@
         },
         {
             "tag": "name",
-            "parttens": ["What is your name", "tell me your name", "What do i call you"],
+            "parttens": ["What is your name", "tell me your name", "What do i call you","what can i call you"],
             "responses":[
                 "I am called Zylla", 
                 "You can call me Zylla",
@@ -58,24 +58,24 @@
         },
         {
             "tag": "purpose",
-            "parttens": ["What can you do", "What's your use","how can you help", "Why exist", "reason created", "purpose","why where you creaded"],
+            "parttens": ["What can you do","why where you made", "What's your use","how can you help", "Why exist","tell me about you", "reason created", "purpose","why where you creaded"],
             "responses":[
-                "My main objective is to help students in research and self development", "I am a chatbot designed to assist students", 
+                "My main objective is to help students in research and self development", "I am a chatbot designed to assist students in knowing more about landmark", 
                 "I was created for the bettermen of student's lifes by assiting and recomending better life choices"
             ]
         },
         {
             "tag": "teach",
-            "parttens": ["Teach","can you learn", "I wnat to learn code", "Teach me", "I wnat to learn programming"],
+            "parttens": ["Teach","can you learn", "I want to learn code", "Teach me", "I want to learn programming"],
             "responses":[
-                "Sorry due to my limited corpus/data I can't be of assistance there<br>But you can fine great books at LMU's <a href='LandmarkMetropolitantUnivercity.com'>E-library</a>", "You can visit the lmu e-library"
+                "Sorry due to my limited corpus/data I can't be of assistance there<br>But you can fine great books at LMU's <a href='landmark.cm'>E-library</a>", "You can visit the lmu e-library"
             ]
         },
         {
             "tag": "about LMU",
             "parttens": ["LMU","what is lmu LMU", "Tell me about Landmark","what can you tell me about landmark", "What is Landmark", "Landmark"],
             "responses":[
-                "Landmark is a university majoring in various feilds like tech, business, health, all around the world"
+                "Landmark is a university majoring in various feilds like tech, business, health, all around the world<br> To know more about landmark vist <a href='landmark.cm'>website</a>"
             ]
         },
         {
@@ -102,7 +102,7 @@
          "parttens": [ "pay tuition","pay fees","how do they pay fees","where can i pay fees","where do i go to pay fees","where can i deposit","bank","found"],
          "responses":[
              "Fees for each level and department vary, but they are all to be paid at the UNICs bank",
-             "All fees are to be paid at the bank(UNICS bank ajecent to landmark) under landmarks account number"
+             "All fees are to be paid at the bank(UNICS bank ajecent to landmark) under landmarks account number<br> and the deposit resit bought to the administration to confirm payment by issuing a resit"
          ]
          },
         {
@@ -127,20 +127,22 @@
             "where is the landmark",
             "where is it in Buea",
             "how can I reach landmark",
+            "where is campus a",
+            "where is campus b",
             "whats is the landmark address",
             "what is the address of landmark",
             "address",
             "location"],
             "responses":[
-                "LMU is found across the world, in Buea, Cameroon<br> campus B at tard Malingo towards mile 18, and campus A at UB juction opposite unic bank",
-                 "You can get all the locational details about LMU at <a href='LandmarkMetropolitantUnivercity.com'>Link</a>"
+                "LMU is a university found across the world, in Buea, Cameroon<br> campus A at UB juction opposite unic bank,and campus B at tard Malingo towards mile 18",
+                 "landmark has two campuses and You can get all the locational details at <a href='https://landmark.cm/lmu-campuse-b'>Link</a>"
             ]
         },
         {
             "tag": "creator",
             "parttens": ["your creator","who created you", "coded by", "Who made you", "What compainy you belong ","your developers","your creators","who are your developers","developers","you are made by","you are made by whom"],
             "responses":[
-                "I was created by a team of Landmark students", "I was developed by Zyee's team from LMU's programming club"
+                "I was created by a team of Landmark students from the LSS of the LIT", "I was developed by Zyee's team from LMU's programming club"
             ]
         },
         {
@@ -163,8 +165,8 @@
              "documents needed"
           ],
           "responses": [
-            "For admision you whould need the following documents: <br> 1. A-level or HND slip<br>  2. Birthcertificate. <br> 3. Passport size photo of yourself. <br> For more details visit <a href=\"landmark.cm \">here</a>",
-             "To know more about document required visit <a target=\"_blank\" href=\"ADD LINK OF ADMISSION GUIDANCE DOCUMENT FROM YOUR UNIVERSITY WEBSITE\"> here</a>"
+            "For admision you whould need the following documents: <br> 1.Either A-level, HND slip, or a previous degree.<br>  2. Birthcertificate. <br> 3. Passport size photo of yourself. <br> And for more details visit <a href=\"https://landmark.cm/tuition-fee\">here</a>",
+             "To know more about document required visit <a target=\"_blank\" href=\"https://landmark.cm/tuition-fee\"> here</a>"
           ]
          
        },
@@ -197,8 +199,10 @@
            "how is college infrastructure",
            "what is the infrastructure like",
            "college infrastructure",
+           "tell me about the scool's infrastructure",
            "what is the infrastucture of lmu like ?",
-           "tell me abit about landmarks infrastructure"
+           "tell me abit about landmarks infrastructure",
+           "infrastructure"
         ],
         "responses": [
            "Our University has Excellent Infrastructure.<br> Campus well organized and managed efficently. <br>Good IT and medical Labs With Good Speed of Internet connection"
@@ -221,7 +225,7 @@
            "when is semester"
         ],
         "responses": [
-           "Here is the Academic Calendar  <a target=\"_blank\" href=\"YOUR ACADEMIC CALENDER\">website</a>"
+           "Here is the Academic Calendar  <a target=\"_blank\" href=\"https://landmark.cm/lmu-academic-calenda\">website</a>"
         ],
         "context_set": ""
      },
@@ -238,13 +242,13 @@
           "where can i go to submit or drop off my documents for admission"
        ],
        "responses": [
-          "Applications are submited in either campus at the administrative office.<br>For further details visit <a target=\"_blank\" href=\"LINK OF ADMISSION DOCUMENT\">website</a>"
+          "Applications are submited in either campus at the administrative office.<br>For further details visit <a target=\"_blank\" href=\"https://landmark.cm/tuition-fee\">website</a>"
        ],
        "context_set": ""
     },
      {
        "tag": "scholarship",
-       "parttens": [
+       "parttens": ["Can i be admited on scholarship",
           "scholarship",
           "what are the requirements to be admited on scholarship",
           "Is scholarship available",
@@ -253,7 +257,7 @@
           "how can i get a scholarship into landmark"
        ],
        "responses": [
-          "Many scholarships are supported by our university. For details and updates visit <a target=\"_blank\" href=\"(SCHOLARSHIP DETAILS LINK)\">here</a>"
+          "The president of landmark has dedicated to giving back to the sociaty and fostering innovation<br> by offering scholarships at our university. For details and updates visit <a target=\"_blank\" href=\"https://landmark.cm/lmu-mission-and-vision\">here</a>"
        ],
        "context_set": ""
     },
@@ -270,7 +274,7 @@
           "what are the various facilities found in landmark"
        ],
        "responses": [
-          "Our university's departments provides <br> fully AC Lab with internet connection,<br> smart classroom, <br>Auditorium,<br> library,canteen"
+          "Our university's departments provides <br> fully AC Labs, Biomedical and computer both with internet connection,<br> smart classroom, <br>Auditorium,<br> library and canteen, to get a full tour you can contact us at <a target=\"_blank\" href=\"https://landmark.cm/lmu-contact\">here</a>"
        ],
        "context_set": ""
     },
@@ -283,6 +287,7 @@
           "number of seats in each branch",
           "maximum number students the school can take",
           "maximum students intake",
+          "what is the maximum number of students on campus",
           "what is the total school population",
           "What is college intake",
           "how many stundent are taken in each branch",
@@ -297,19 +302,20 @@
      {
        "tag": "uniform",
        "parttens": [
-          "college dress code",
+          "what is the dress code",
           "what is the dressing code or dress code of landmark",
           "college dresscode",
           "what is the uniform",
+          "is there a dressing code",
           "can we wear casuals",
-          "Does college have an uniform",
+          "Does landmark have an uniform",
           "Is there any uniform",
           "uniform",
           "what about uniform",
           "do we have to wear uniform"
        ],
        "responses": [
-          "The students are requried to dress decently and not to wear slippers to class"
+          "The students are requried to dress decently and not to wear slippers to class","the only dress required to wear is the school t-shirt<br> which is worn only on wednesday's"
        ],
        "context_set": ""
     },
@@ -345,7 +351,8 @@
            "about holidays",
            "When is vacation",
            "When is holidays",
-           "how long will be the vacation"
+           "how long will be the vacation",
+           "when do they go on holidays"
         ],
         "responses": [
            "Academic calender is given to you by your class-coordinators after you join your respective classes"
@@ -360,13 +367,14 @@
            "give sports details",
            "sports infrastructure",
            "sports facilities",
-           "sports",
+           "sports","do sports of extra curicular activities",
            "information about sports",
            "are there Sports activities",
-           "please provide sports and games information"
+           "please provide sports and games information",
+           "activity can i engage in if i attend landmark"
         ],
         "responses": [
-           "Our university encourages all-round development of students and <br> hence provides sports facilities in the campus. For more details visit<a target=\"_blank\" href=/\"(LINK IF HAVE)\">here</a>"
+           "Our university encourages all-round development of students and <br> hence provides sporting, clubs and other facilities in the campus. For more details visit<a target=\"_blank\" href=/\"https://landmark.cm/lmu-academic-calenda\">here</a>"
         ],
         "context_set": ""
      },
@@ -378,13 +386,13 @@
          "what opportunities are there for me in landmark lmu",
          "what do i stand to gain by schooling in landmark",
          "why should i attend landmark lmu",
-         "gain achive opportunities",
+         "gain achive opportunities","gain","opportunities","achive",
          "what will i gain after schooling in landmark",
         "opportunities or advantages to attending or schooling in landmark"
         ],
          "responses":[
-             "Landmark's courses at very interactive and project orented,<br> thus garanting a high posibility of empolyment after graduation",
-             "Landmark is responsible for creating over a 50 DevOps engineers, why don't you join and tap into such an atmospher",
+             "Landmark's courses are very interactive and project orented,<br> thus garanting a high posibility of empolyment after graduation",
+             "Landmark is responsible for creating over 50 DevOps engineers, why don't you join and tap into such an atmospher",
              "Landmark offers high quality education and a good learing enviroment at a fair price"
          ]
      },
@@ -396,12 +404,13 @@
              "what specialty can i do in landamrk",
              "what specialties are there",
              "what courses do they offer",
+             "courses","specialty",
              "what are the various specialties in landmark",
              "i do in landmark","specialty",
-             "courses and specialties"
+             "courses and specialties","what can i do in lmu"
          ],
          "responses":[
-             "There are various fields of studies you can dive into with very limited knowledge like,<br> enigineering, cyber security, medical science, transport and logistics, graphics and web design, and more. ",
+             "There are various fields of studies you can dive into with very limited knowledge like,<br> enigineering, cyber security, medical science, transport and logistics, graphics and web design, agriculture, finance and <a target=\"_blank\" href=/\"https://landmark.cm/lmu-departments\">More</a>. ",
              "Depending on your passion, you can do either enigineering, cyber security, medical science,<br> transport and logistics, graphics and web design, bissness and more."
          ]
      },
@@ -416,13 +425,13 @@
          "responses":[
             "HND is a two years program after which the student can do a one year top-off program and <br> get their bachelors while B-Tech is a straight three years program for thesame bachelors",
             "HND stands for Higher Nationl Deploma while B-Tech stands for Bachelors in technology",
-            "B-Tech can only be undertaken by individuals with pass marks in maths and physics,<br> while HND can be undertaken by individuals of pass marks in two avance level subjects excluding religious study"
+            "B-Tech can only be undertaken by individuals with pass marks in maths and physics,<br> while HND can be undertaken by individuals of pass marks in two advance level subjects excluding religious study"
          ]
       },
       {
          "tag": "Digits",
          "parttens": ["what is the sum of","what is 1 plus 2",
-         "what is the prduct of",
+         "what is the product of",
          "what is the division of",
          "what is the multiplication of",
          "1", "2", "3", "4", "5", "6", "7", "8", "9", "0","+", "-", "*", "/"],

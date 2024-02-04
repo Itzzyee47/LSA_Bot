@@ -1,4 +1,4 @@
-import random, json, torch, regex
+import random, json, torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 from arthOps import perform_opertion
@@ -48,13 +48,13 @@ def getRespons(sentence):
                 print(tag)
                 return ran
                 
-    elif prob.item() > 0.56 or prob.item() <= 0.7:
+    elif prob.item() > 0.56 and prob.item() <= 0.7:
         for intent in intents["intents"]:
             if tag == intent["tag"]:
                 if tag == "Digits":
                     return perform_opertion(qes)
                 #potentially unaccurate responds.....
-                ran = f"* {random.choice(intent['responses'])}"
+                ran = f" {random.choice(intent['responses'])}"
                 print(str(prob.item()))
                 print(tag)
                 return ran

@@ -55,7 +55,7 @@ class ChatDataset(Dataset):
 
 # Hyperparameters
 batch_size = 5
-hidden_size = 7
+hidden_size = 8
 output_size = len(tags)
 input_size = len(X_train[0])
 print(input_size, len(all_words))

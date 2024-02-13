@@ -3,7 +3,7 @@
         {
             "tag": "greeting",
             "parttens": [
-                "Hi", "Hey", "Is anyone there", "Hello", "Sup", "Goodday","Yo","good day","yooo"
+                "Hi", "Hey", "Is anyone there", "Hello", "Sup", "Goodday","Yo","good day","yoo"
             ],
             "responses": [
                 "Hey :)",
@@ -35,7 +35,7 @@
         },
         {
             "tag": "compliment",
-            "parttens": ["nice","thanks","good","thats good","good and you","i am ok and you","cool","thanks for asking","ok", "excellent job"],
+            "parttens": ["nice","thanks","good","thats good","good and you","i am ok and you","cool","thanks for asking","ok","why", "excellent job"],
             "responses":[
                 "Cool, you where saying", "Glad to be of help", "Indeed, anything else?"
             ]
@@ -58,7 +58,7 @@
         },
         {
             "tag": "purpose",
-            "parttens": ["What can you do","why where you made", "What's your use","how can you help", "Why exist","tell me about you", "reason created", "purpose","why where you creaded"],
+            "parttens": ["What can you do","why where you made","what is your main objective", "What's your use","how can you help", "Why exist","tell me about you", "reason created", "purpose","why where you creaded"],
             "responses":[
                 "My main objective is to help students in research and self development", "I am a chatbot designed to assist students in knowing more about landmark", 
                 "I was created for the bettermen of student's lifes by assiting and recomending better life choices"
@@ -99,7 +99,7 @@
         },
         {
          "tag": "how to pay fees",
-         "parttens": [ "pay tuition","pay fees","how do they pay fees","where can i pay fees","where do i go to pay fees","where can i deposit","bank","found"],
+         "parttens": [ "pay tuition","pay fees","how do they pay fees","where can i pay fees","where do i go to pay fees","where can i deposit","bank","found","where is the bank found"],
          "responses":[
              "Fees for each level and department vary, but they are all to be paid at the UNICs bank",
              "All fees are to be paid at the bank(UNICS bank ajecent to landmark) under landmarks account number<br> and the deposit resit bought to the administration to confirm payment by issuing a resit"
@@ -107,7 +107,7 @@
          },
         {
             "tag": "LMU Owned by",
-            "parttens": ["The is the president LMU","who owns lmu","who is the propritor of lmu", "Landmark is owned by who? ", "the main sponsor of landmark"],
+            "parttens": ["who is the president of landmark LMU","who owns lmu","who is the propritor of lmu", "Landmark is owned by who? ", "the main sponsor of landmark"],
             "responses":[
                 "The president of landmark is Prof Simon Legah"
             ]
@@ -126,7 +126,7 @@
             "landmark address",
             "where is the landmark",
             "where is it in Buea",
-            "how can I reach landmark",
+            "how can I get to landmark",
             "where is campus a",
             "where is campus b",
             "whats is the landmark address",
@@ -140,9 +140,10 @@
         },
         {
             "tag": "creator",
-            "parttens": ["your creator","who created you", "coded by", "Who made you", "What compainy you belong ","your developers","your creators","who are your developers","developers","you are made by","you are made by whom"],
+            "parttens": ["your creator","who created you", "coded by", "Who made you", "What company you belong ","your developers","your creators","who are your developers","developers","you are made by","you are made by whom"],
             "responses":[
-                "I was created by a team of Landmark students from the LSS of the LIT", "I was developed by Zyee's team from LMU's programming club"
+                "I was created by a team of Landmark students from the LSS of the LIT<br> For the meaing of various abbrivations please vist <a href='https://landmark.cm/LandmarkSoftwareSolutions'>LSS</a>",
+                 "I was developed by Zyee's team from LMU's programming club"
             ]
         },
         {
@@ -239,6 +240,10 @@
           "admission",
           "admission process",
           "where is admission done",
+          "how can i register",
+          "i want to register",
+          "if i where to register where do i go",
+          "what are the documents i need for registration",
           "where can i go to submit or drop off my documents for admission"
        ],
        "responses": [
@@ -257,7 +262,7 @@
           "how can i get a scholarship into landmark"
        ],
        "responses": [
-          "The president of landmark has dedicated to giving back to the sociaty and fostering innovation<br> by offering scholarships at our university. For details and updates visit <a target=\"_blank\" href=\"https://landmark.cm/lmu-mission-and-vision\">here</a>"
+          "The president of landmark is dedicated to giving back to the sociaty and fostering innovation<br> by offering scholarships at our university. For details and updates visit <a target=\"_blank\" href=\"https://landmark.cm/lmu-mission-and-vision\">here</a>"
        ],
        "context_set": ""
     },
@@ -392,7 +397,7 @@
         ],
          "responses":[
              "Landmark's courses are very interactive and project orented,<br> thus garanting a high posibility of empolyment after graduation",
-             "Landmark is responsible for creating over 50 DevOps engineers, why don't you join and tap into such an atmospher",
+             "Landmark is responsible for creating over a hundred high earning DevOps engineers world wide, <br> why don't you join and tap into such an atmospher",
              "Landmark offers high quality education and a good learing enviroment at a fair price"
          ]
      },

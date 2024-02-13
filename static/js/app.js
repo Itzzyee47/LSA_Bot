@@ -42,6 +42,23 @@ event.preventDefault();
 let message = document.getElementById('userInput').value;
 console.log(message);
 
+//Add the users message to the screen....
+var chatwin = document.getElementById('chatWindow');
+var userQ = document.createElement('li');
+var mbox = document.createElement('div');
+mbox.textContent = message;
+var img1 = document.createElement('img');
+var nTime = document.createElement('div');
+nTime.innerText = currentTime();
+nTime.classList.add('sT');
+mbox.appendChild(nTime); 
+img1.classList.add('im1');
+img1.src = "../static/img/profile.png";
+mbox.appendChild(img1);
+mbox.classList.add('umess');
+userQ.appendChild(mbox);
+chatwin.appendChild(userQ);
+
 //clear form input to show that message has been sent.....
 document.getElementById('userInput').value = '';
 
@@ -55,18 +72,18 @@ body: 'message=' + encodeURIComponent(message)
     var chatwin = document.getElementById('chatWindow');
     var userQ = document.createElement('li');
     var mbox = document.createElement('div');
-    mbox.textContent = message;
-    var img1 = document.createElement('img');
-    var nTime = document.createElement('div');
-    nTime.innerText = currentTime();
-    nTime.classList.add('sT');
-    mbox.appendChild(nTime); 
-    img1.classList.add('im1');
-    img1.src = "../static/img/profile.png";
-    mbox.appendChild(img1);
-    mbox.classList.add('umess');
-    userQ.appendChild(mbox);
-    chatwin.appendChild(userQ);
+    // mbox.textContent = message;
+    // var img1 = document.createElement('img');
+    // var nTime = document.createElement('div');
+    // nTime.innerText = currentTime();
+    // nTime.classList.add('sT');
+    // mbox.appendChild(nTime); 
+    // img1.classList.add('im1');
+    // img1.src = "../static/img/profile.png";
+    // mbox.appendChild(img1);
+    // mbox.classList.add('umess');
+    // userQ.appendChild(mbox);
+    // chatwin.appendChild(userQ);
 
     var resposeM = document.createElement('li');
     var bBox = document.createElement('div');

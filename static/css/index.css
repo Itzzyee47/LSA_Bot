@@ -37,6 +37,10 @@ form{
     padding-left: 9px;
     padding-right: 9px;
 }
+.error{
+    color: red;
+    padding-bottom: 9px;
+}
 form> h2{
     margin-top: 50%; 
     color: rgb(163, 247, 236);
@@ -59,6 +63,12 @@ input{
     border-radius: 20px;
     border: none;
 }
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .container {
         flex-direction: column;

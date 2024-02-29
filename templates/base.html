@@ -34,10 +34,19 @@
             <p style="position: relative; top: -10%;font-size: 0.9rem;font-weight: bold;">
                 ZYLLA<small>1.0.2</small>
             </p>
-            <div class="moreOp">
-                <i class="fa fa-ellipsis-v"></i>
+            <div class="moreOp" id="moreOp" onmouseover="more()">
+                <i class="fa fa-ellipsis-v" ></i>
+                <div class="menu" style="display: none;" id="moreL" onmouseover="more()">
+                    <ul>
+                        <li>Eval</li>
+                        <li>DashB</li>
+                        <li onclick="logout()">Logout</li>
+                    </ul>
+                </div>
             </div>
+            
         </div>
+        
         
         <div class="messages" id="chatWindow">
         

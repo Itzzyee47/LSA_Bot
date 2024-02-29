@@ -12,6 +12,7 @@ body{
     gap: 9px    ;
     align-items: center;
     justify-items: center;
+    position: relative;
 }
 .header>button{
     height: 40px;
@@ -37,14 +38,51 @@ body{
 small{
     font-size: 0.4rem;
 }
+.menu{
+    top: 29px;
+    right: 14px;
+    width: 90px;
+    height: fit-content;
+    position: absolute;
+    list-style: none;
+    background-color: rgb(234, 231, 231);
+    box-shadow: 1px 1px 9px;
+    font-size: 0.8rem;
+    z-index: 1;
+}
+.menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.menu ul li{
+    text-align: center;
+    padding: 2px 0;
+    margin: 2px;
+    list-style: none;
+    
+}
+.menu ul li:hover{
+   background-color: aliceblue;
+   cursor: pointer;
+}
 .moreOp{
-    width: 10px;
+    position: relative;
+    width: 30px;
+    border-radius: 19px;
     font-size: 1.5rem;
     font-family: cursive;
     /* text-shadow: 1px 2px 4px black; */
     position: absolute;
     right: 5px;
     text-align: center;
+}
+/* .moreOp:hover{
+    background-color: #7560a0;
+} */
+.moreOp:hover {
+    display: block;
+    background-color: #7560a0;  
 }
 .botI{
     width: 38px;

@@ -21,6 +21,18 @@ function hideCon(){
         cent.style.display = "block";
     }
 }
+function more(){
+    console.log('M pressed')
+    let moreL = document.getElementById('moreL');
+    if (moreL.style.display == 'none'){
+        moreL.style.display = 'block';
+    }else{
+        moreL.style.display = 'none';
+    }
+}
+function logout(){
+    window.location.assign("/logout")
+}
 
 function addZero(i) {
     if (i < 10) {

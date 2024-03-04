@@ -31,7 +31,11 @@ function more(){
     }
 }
 function logout(){
-    window.location.assign("/logout")
+    window.location.assign("/logout");
+}
+
+function goto(site){
+    window.location.assign(site);
 }
 
 function addZero(i) {

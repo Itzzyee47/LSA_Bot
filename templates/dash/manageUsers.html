@@ -1,0 +1,79 @@
+{% extends 'dash.html' %}
+{% block content %}
+
+    <div class="mU">
+        <h3>
+            USERS
+        </h3>
+        <table>
+            <tr>
+                <th>id</th>    <th>name</th>    <th>email</th>    <th>password</th>    <th>started_At</th>
+            </tr>
+            {% for u in users %}
+                <tr id="{{ u[0] }}">
+                    <td> {{ u[0] }} </td>  <td>{{ u[1] }}</td>  <td>{{ u[2] }}</td> <td type="RAW" >{{ u[3] }}</td>   <td>{{ u[4] }}</td> <td style="color: greenyellow;" onclick="upD('{{u[0]}}')"><i class="fa fa-pencil"></i></td> <td style="color: red;" onclick="delU('{{ u[0] }}')"><i class="fa fa-trash"></i></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="popUp" id="pop">
+ 
+        <form action="" method="post" id="F">
+            <div class="xBtn" id="xB" onclick="closeF()">X</div>
+            <h2>Update user of id </h2>
+            <input type="text" name="name" >
+            <input type="email" name="email">
+            <input type="password" name="password">
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+    <script>
+        
+
+        function upD(int){
+            let p = document.getElementById('pop');
+            let f = document.getElementById('F');
+            let list = document.getElementById(int);
+            //getting the details of that user
+            var one = list.children[1].textContent;
+            var two = list.children[2].textContent;
+            var three = list.children[3].textContent;
+
+            //console.log(list.children[3].textContent)
+            //console.log(f.children[2].value);
+            f.children[1].innerHTML = "Update user of id "+int;
+            f.children[2].value = one;
+            f.children[3].value = two;
+            f.children[4].value = three;
+            f.action = "/update/"+int;
+            //console.log(f.action);
+
+            f.addEventListener('submit', ()=>{
+                    
+                    // clear the fields..
+                    //f.children[1].innerHTML = "Update user of id ";
+                    //f.children[2].value = '';
+                    //f.children[3].value = '';
+                    //f.children[4].value = '';
+                    //f.action = "/update/";
+                closeF();
+                alert("Processed!!");
+            })
+
+            p.style.display = "flex";
+        }
+        function closeF(){
+            let p = document.getElementById('pop');
+            p.style.display = "none";
+        }
+        function delU(id){
+            if (confirm("Are you sure you want to delete user of id "+id)) {
+                 alert("You tried to delete user of id "+id);
+              } else {
+                txt = "You pressed Cancel!";
+              }
+        }
+    </script>
+{% endblock %}

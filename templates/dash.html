@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot's/DashBoard</title>
+    <link rel="stylesheet" href="../static/css/dash.css">
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="dash" style="display: flex;">
+        <header>
+            <i onclick="tNav()" class="fa fa-navicon" style="display: flex;"> </i>
+            
+            <div onclick="goto('/dashborad')">DashBoard</div>
+            <div><i class="fa fa-user-circle-o"></i></div>
+
+        </header>
+       <div class="cont">
+            <div class="sidebar" id="sideB" style="width: 200px;">
+                <div class="side_items" id="sideI" style="width: 98%;">
+                    <li onclick="goto('/dash/manage-users')"><i class="fa fa-users"></i><div>Manage Users</div></li>
+                    <li><i class="fa fa-comments-o"></i><div>Wrong Responds</div></li>
+                    <li><i class="fa fa-pencil-square-o"></i><div>Manage NewQ</div></li>
+                    <li onclick="goto('/dash/Pendding')"><i class="fa"></i><div> i</div></li>
+                    <li><i class="fa "></i> <div>{{ user }}</div> </li>
+                    <li onclick="goto('/chatpage')"><i class="fa fa-home"></i><div>Return to chat</div></li>
+
+                    
+                </div>
+            </div>
+
+
+            <div class="main_content">
+                {% block content%}
+                    <div class="Us"  onclick="goto('/dash/manage-users')">
+                        <div class="count">
+                            {{ count }}
+                        </div>
+                        <div class="Utxt">
+                            TOTAL USERS
+                        </div>
+                    </div>
+                    <div class="Us">
+                        <div class="count">
+                            {{ count }}
+                        </div>
+                        <div class="Utxt">
+                            TOTAL NEWQ's
+                        </div>
+                    </div>
+                {% endblock%}
+                
+            </div>
+       </div>
+
+
+
+
+    </div>
+    
+
+    <script src="../static/js/app.js"></script>
+    <script>
+        let side = document.getElementById('sideB');
+        let items = document.getElementById('sideI');
+        function tNav(){
+            if(side.style.width === "200px"){
+                side.style.width = "53px";
+                items.style.width = "23px";
+                for(i=0;i<items.children.length;i++){
+                    items.children[i].children[1].style.display = "none";
+                }
+            }else{
+                side.style.width = "200px";
+                items.style.width = "98%";
+                for(i=0;i<items.children.length;i++){
+                    items.children[i].children[1].style.display = "flex";   
+                }
+            }
+            //console.log(items.children[0].children[1]);
+        }
+    </script>
+</body>
+</html>

@@ -2,6 +2,7 @@ import random, json, torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 from arthOps import perform_opertion
+from readJson import insert_question
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -22,8 +23,11 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 bot_name = "Zylla"
+previousQ = ["Qstart"]
 
-def getRespons(sentence):
+def getRespons(sentence,u):
+    #  An array to store privious questions
+    
     qes = sentence
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
@@ -60,10 +64,12 @@ def getRespons(sentence):
                 return ran
         
     else:
-        with open("newQ.csv","a") as f:
-            newQ = f
-            newQ.writelines(","+qes)
-            newQ.close()
-            print(str(prob.item()))
-        return f"I do not understand could you rephrase"
+        if previousQ[-1] == qes:
+            insert_question('newQ.json',u,qes)
+            return f"Try saying {previousQ[-1]} in another manner "
+        else:
+            insert_question('newQ.json',u,qes)
+            previousQ.append(qes)
+            
+            return f"I do not understand could you rephrase"
         

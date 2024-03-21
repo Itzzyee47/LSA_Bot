@@ -1,0 +1,28 @@
+{% extends 'dash.html' %}
+{% block content %}
+<style>
+    .main_content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+</style>
+
+    <table>
+        <h3>New Questions</h3>
+        <tr>
+            <th>User</th><th>Questions asked</th>
+        </tr>
+       
+            {% for u in Qs %}
+                <tr>
+                    <td>{{u[0]}}</td><td> {{u[1]}}</td>
+                </tr>
+                
+            {% endfor %}
+        
+            
+
+    </table>
+
+{% endblock %}

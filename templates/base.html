@@ -38,7 +38,7 @@
                 <i class="fa fa-ellipsis-v" ></i>
                 <div class="menu" style="display: none;" id="moreL" onmouseover="more()">
                     <ul>
-                        <li>Eval</li>
+                        <li onclick="eval()">Eval</li>
                         <li onclick="goto('/dashborad')">DashB</li>
                         <li onclick="logout()">Logout</li>
                     </ul>
@@ -51,7 +51,7 @@
         <div class="messages" id="chatWindow">
         
             
-            
+            <button id="evalBtn" style="display: none;" onclick="displayMessages()">Evaluate</button>
         </div>
 
         <form action="" method="post" id="message-form">
@@ -61,8 +61,12 @@
        
     </div>
         <div class="chat" onclick="showCon()">
-            <i class="fa fa-comment" style="color: #fff; font-size:1.5rem;"></i><div> chat</div>
+            <i class="fa fa-comment" style="color: #fff; font-size:1.5rem;"></i>
         </div>
+        <div id="user" style="display: none;">{{user}}</div>
         <script src="../static/js/app.js"></script>
+        <script>
+            let Cuser = document.getElementById('user');
+        </script>
 </body>
 </html>

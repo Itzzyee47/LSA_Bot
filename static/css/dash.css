@@ -68,12 +68,12 @@ header>div,header>i{
     overflow-y: scroll;
     padding-top: 50px;
     font-size: 1rem;
-    width: 80%;
+    width: 100%;
     height: -webkit-fill-available;
     background-color: white;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: start;
     justify-content: space-evenly;
 }
 .Us{
@@ -110,16 +110,23 @@ header>div,header>i{
 table{
     width: 85%;
     height: auto;
-    border: 1px solid black;
     border-radius: 12px;
-    padding: 10px;
+    border-collapse: collapse;
+    overflow: hidden;
+    background-clip: content-box;
 }
 tr:nth-child(even) {
     background-color: #f2f2f2;
   }
+th{
+    background-color: rgb(147 112 219);
+}
 tr{
     text-align: center;
-    min-height: 30px;
+    height: 38px;
+}
+td{
+    padding: 3px;
 }
 .popUp{
     position: fixed;
@@ -147,6 +154,13 @@ tr{
     height: 30px;
     padding-left: 8px;
     border: 0;
+}
+.popUp>form>h2{
+    color: #7b54d0;
+    font-family: fantasy;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px white;
 }
 .xBtn{
     position: absolute;

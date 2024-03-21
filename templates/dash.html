@@ -23,7 +23,7 @@
                 <div class="side_items" id="sideI" style="width: 98%;">
                     <li onclick="goto('/dash/manage-users')"><i class="fa fa-users"></i><div>Manage Users</div></li>
                     <li><i class="fa fa-comments-o"></i><div>Wrong Responds</div></li>
-                    <li><i class="fa fa-pencil-square-o"></i><div>Manage NewQ</div></li>
+                    <li onclick="goto('/dash/manageNewQ')"><i class="fa fa-pencil-square-o"></i><div>Manage NewQ</div></li>
                     <li onclick="goto('/dash/Pendding')"><i class="fa"></i><div> i</div></li>
                     <li><i class="fa "></i> <div>{{ user }}</div> </li>
                     <li onclick="goto('/chatpage')"><i class="fa fa-home"></i><div>Return to chat</div></li>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="Us">
                         <div class="count">
-                            {{ count }}
+                            {{ newQ }}
                         </div>
                         <div class="Utxt">
                             TOTAL NEWQ's

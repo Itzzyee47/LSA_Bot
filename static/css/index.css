@@ -8,8 +8,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(3px);
-
+    background-image: url('../img/bg1.png');
+    background-size: cover  ;
 }
 .container{
     width: 60%;
@@ -59,7 +59,7 @@ form> h2{
 }
 input{
     padding-left: 30px;
-    height: 30px;
+    height: 40px;
     border-radius: 20px;
     border: none;
 }

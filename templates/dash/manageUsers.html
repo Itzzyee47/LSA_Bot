@@ -1,17 +1,25 @@
 {% extends 'dash.html' %}
 {% block content %}
 
+<style>
+    .main_content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+</style>
+
     <div class="mU">
         <h3>
             USERS
         </h3>
         <table>
             <tr>
-                <th>id</th>    <th>name</th>    <th>email</th>    <th>password</th>    <th>started_At</th>
+                <th>id</th>    <th>name</th>    <th>email</th>    <th>password</th>    <th>started_At</th> <th ></th><th ></th>
             </tr>
             {% for u in users %}
                 <tr id="{{ u[0] }}">
-                    <td> {{ u[0] }} </td>  <td>{{ u[1] }}</td>  <td>{{ u[2] }}</td> <td type="RAW" >{{ u[3] }}</td>   <td>{{ u[4] }}</td> <td style="color: greenyellow;" onclick="upD('{{u[0]}}')"><i class="fa fa-pencil"></i></td> <td style="color: red;" onclick="delU('{{ u[0] }}')"><i class="fa fa-trash"></i></td>
+                    <td> {{ u[0] }} </td>  <td>{{ u[1] }}</td>  <td>{{ u[2] }}</td> <td type="RAW" >{{ u[3] }}</td>   <td>{{ u[4] }}</td> <td style="color: greenyellow;font-size: 23px;" onclick="upD('{{u[0]}}')"><i class="fa fa-pencil"></i></td> <td style="color: red;font-size: 23px;" onclick="confirmDelete('{{ u[0] }}')"><i class="fa fa-trash"></i></td>
                 </tr>
             {% endfor %}
         </table>
@@ -29,6 +37,7 @@
             <button type="submit">Update</button>
         </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
         
 
@@ -67,6 +76,21 @@
         function closeF(){
             let p = document.getElementById('pop');
             p.style.display = "none";
+        }
+        function confirmDelete(id){
+            Swal.fire({
+                title: 'Are you sure you want to delete',
+                text: 'you no go fit get am back',
+                icon:'warning',
+                showCancleButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d',
+                confirmButtonText: 'Yes, delete'
+            }).then((result) => {
+                if (result.isConfirm){
+
+                }
+            })
         }
         function delU(id){
             if (confirm("Are you sure you want to delete user of id "+id)) {

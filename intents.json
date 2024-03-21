@@ -58,7 +58,7 @@
         },
         {
             "tag": "purpose",
-            "parttens": ["What can you do","why where you made","what is your main objective", "What's your use","how can you help", "Why exist","tell me about you", "reason created", "purpose","why where you creaded"],
+            "parttens": ["What can you do","why where you made","what is your main objective", "What's your use","how can you help", "Why exist","tell me about you", "reason created", "purpose","why where you creaded","what are you"],
             "responses":[
                 "My main objective is to help students in research and self development", "I am a chatbot designed to assist students in knowing more about landmark", 
                 "I was created for the bettermen of student's lifes by assiting and recomending better life choices"
